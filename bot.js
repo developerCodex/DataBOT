@@ -15,6 +15,29 @@ if(message.content.startsWith(prefix + "ping")) {
   }
   if(message.content.startsWith(prefix + "foo")) {
     message.channel.sendMessage("bar!")
+  }
+  
+    if(message.content.startsWith(prefix + "kick")) {
+  let modRole = message.guild.roles.find("name", "Mods");
+  if(!message.member.roles.has(modRole.id)) {
+    return message.reply("Sorry, you do not have the correct permissions to use this command, try again later.");
+  }
+  if(message.mentions.users.size === 0) {
+    return message.reply("Sorry, please mention a correct user to kick.")
+  }
+  let kickMember = message.guild.member(message.mentions.users.first());
+  if(!kickMember) {
+    return message.reply("Sorry, that user doesn't seem to be vaild on this server.");
+  }
+  if(!message.guild.member(bot.user).hasPermission("KICK_MEMBERS")) {
+    return message.reply("Sorry, I do not have the permission to kick members.");
+  }
+  kickMember.kick().then(member => {
+    message.reply(`${message.user.username} was sucessfully kicked from the server/guild.`)
+  }).catch(e => {
+    console.error(e);
+});
+}
 });
 
 bot.login(config.token);
