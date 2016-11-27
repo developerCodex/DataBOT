@@ -18,7 +18,7 @@ if(message.content.startsWith(prefix + "ping")) {
   }
 
     if(message.content.startsWith(prefix + "kick")) {
-  let modRole = message.guild.roles.find("name", "Bot Commander");
+  let modRole = message.guild.roles.find("name", "Commander");
   if(!message.member.roles.has(modRole.id)) {
     return message.reply("Sorry, you do not have the correct permissions to use this command, try again later.");
   }
@@ -39,7 +39,7 @@ if(message.content.startsWith(prefix + "ping")) {
 });
 }
 if(message.content.startsWith(prefix + "ban")) {
-let modRole = message.guild.roles.find("name", "Bot Commander");
+let modRole = message.guild.roles.find("name", "Commander");
 if(!message.member.roles.has(modRole.id)) {
 return message.reply("Sorry, you do not have the correct permissions to use this command, try again later.");
 }
