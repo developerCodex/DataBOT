@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/developerCodex/DataBOT/issues"
   },
-  "homepage": "https://github.com/developerCodex/DataBOT#readme"
+  "homepage": "https://github.com/developerCodex/DataBOT#readme",
    "dependencies": {
     "discord.js": "github:hydrabolt/discord.js"
 }
