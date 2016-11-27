@@ -23,5 +23,5 @@
   },
   "homepage": "https://github.com/developerCodex/DataBOT#readme"
    "dependencies": {
-    "discord.js": "github:hydrabolt/discord.js",
+    "discord.js": "github:hydrabolt/discord.js"
 }
