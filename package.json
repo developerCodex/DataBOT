@@ -1,0 +1,25 @@
+{
+  "name": "databot",
+  "version": "1.0.0",
+  "description": "An open-sourced discord bot.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerCodex/DataBOT.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "moderation",
+    "helper"
+  ],
+  "author": "developerCodex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developerCodex/DataBOT/issues"
+  },
+  "homepage": "https://github.com/developerCodex/DataBOT#readme"
+}
